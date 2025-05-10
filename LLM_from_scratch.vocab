@@ -1,0 +1,1024 @@
+[\u0000] 0
+[\u0001] 1
+[\u0002] 2
+[\u0003] 3
+[\u0004] 4
+[\u0005] 5
+[\u0006] 6
+[\u0007] 7
+[\u0008] 8
+[\u0009] 9
+[\u000a] 10
+[\u000b] 11
+[\u000c] 12
+[\u000d] 13
+[\u000e] 14
+[\u000f] 15
+[\u0010] 16
+[\u0011] 17
+[\u0012] 18
+[\u0013] 19
+[\u0014] 20
+[\u0015] 21
+[\u0016] 22
+[\u0017] 23
+[\u0018] 24
+[\u0019] 25
+[\u001a] 26
+[\u001b] 27
+[\u001c] 28
+[\u001d] 29
+[\u001e] 30
+[\u001f] 31
+[ ] 32
+[!] 33
+["] 34
+[#] 35
+[$] 36
+[%] 37
+[&] 38
+['] 39
+[(] 40
+[)] 41
+[*] 42
+[+] 43
+[,] 44
+[-] 45
+[.] 46
+[/] 47
+[0] 48
+[1] 49
+[2] 50
+[3] 51
+[4] 52
+[5] 53
+[6] 54
+[7] 55
+[8] 56
+[9] 57
+[:] 58
+[;] 59
+[<] 60
+[=] 61
+[>] 62
+[?] 63
+[@] 64
+[A] 65
+[B] 66
+[C] 67
+[D] 68
+[E] 69
+[F] 70
+[G] 71
+[H] 72
+[I] 73
+[J] 74
+[K] 75
+[L] 76
+[M] 77
+[N] 78
+[O] 79
+[P] 80
+[Q] 81
+[R] 82
+[S] 83
+[T] 84
+[U] 85
+[V] 86
+[W] 87
+[X] 88
+[Y] 89
+[Z] 90
+[[] 91
+[\] 92
+[]] 93
+[^] 94
+[_] 95
+[`] 96
+[a] 97
+[b] 98
+[c] 99
+[d] 100
+[e] 101
+[f] 102
+[g] 103
+[h] 104
+[i] 105
+[j] 106
+[k] 107
+[l] 108
+[m] 109
+[n] 110
+[o] 111
+[p] 112
+[q] 113
+[r] 114
+[s] 115
+[t] 116
+[u] 117
+[v] 118
+[w] 119
+[x] 120
+[y] 121
+[z] 122
+[{] 123
+[|] 124
+[}] 125
+[~] 126
+[\u007f] 127
+[�] 128
+[�] 129
+[�] 130
+[�] 131
+[�] 132
+[�] 133
+[�] 134
+[�] 135
+[�] 136
+[�] 137
+[�] 138
+[�] 139
+[�] 140
+[�] 141
+[�] 142
+[�] 143
+[�] 144
+[�] 145
+[�] 146
+[�] 147
+[�] 148
+[�] 149
+[�] 150
+[�] 151
+[�] 152
+[�] 153
+[�] 154
+[�] 155
+[�] 156
+[�] 157
+[�] 158
+[�] 159
+[�] 160
+[�] 161
+[�] 162
+[�] 163
+[�] 164
+[�] 165
+[�] 166
+[�] 167
+[�] 168
+[�] 169
+[�] 170
+[�] 171
+[�] 172
+[�] 173
+[�] 174
+[�] 175
+[�] 176
+[�] 177
+[�] 178
+[�] 179
+[�] 180
+[�] 181
+[�] 182
+[�] 183
+[�] 184
+[�] 185
+[�] 186
+[�] 187
+[�] 188
+[�] 189
+[�] 190
+[�] 191
+[�] 192
+[�] 193
+[�] 194
+[�] 195
+[�] 196
+[�] 197
+[�] 198
+[�] 199
+[�] 200
+[�] 201
+[�] 202
+[�] 203
+[�] 204
+[�] 205
+[�] 206
+[�] 207
+[�] 208
+[�] 209
+[�] 210
+[�] 211
+[�] 212
+[�] 213
+[�] 214
+[�] 215
+[�] 216
+[�] 217
+[�] 218
+[�] 219
+[�] 220
+[�] 221
+[�] 222
+[�] 223
+[�] 224
+[�] 225
+[�] 226
+[�] 227
+[�] 228
+[�] 229
+[�] 230
+[�] 231
+[�] 232
+[�] 233
+[�] 234
+[�] 235
+[�] 236
+[�] 237
+[�] 238
+[�] 239
+[�] 240
+[�] 241
+[�] 242
+[�] 243
+[�] 244
+[�] 245
+[�] 246
+[�] 247
+[�] 248
+[�] 249
+[�] 250
+[�] 251
+[�] 252
+[�] 253
+[�] 254
+[�] 255
+[\u000a][\u000a] -> [\u000a\u000a] 256
+[:][ ] -> [: ] 257
+[a][s] -> [as] 258
+[n][a] -> [na] 259
+[g][h] -> [gh] 260
+[gh][t] -> [ght] 261
+[u][ght] -> [ught] 262
+[ught][y] -> [ughty] 263
+[\u000a\u000a][A] -> [\u000a\u000aA] 264
+[na][ughty] -> [naughty] 265
+[\u000a\u000aA][B] -> [\u000a\u000aAB] 266
+[\u000a\u000aAB][_] -> [\u000a\u000aAB_] 267
+[\u000a\u000aAB_][naughty] -> [\u000a\u000aAB_naughty] 268
+[\u000a\u000aAB_naughty][: ] -> [\u000a\u000aAB_naughty: ] 269
+[as][i] -> [asi] 270
+[\u000a\u000a][F] -> [\u000a\u000aF] 271
+[\u000a\u000aF][asi] -> [\u000a\u000aFasi] 272
+[*][: ] -> [*: ] 273
+[\u000a\u000aFasi][*: ] -> [\u000a\u000aFasi*: ] 274
+[e][ ] -> [e ] 275
+[t][ ] -> [t ] 276
+[i][n] -> [in] 277
+[t][h] -> [th] 278
+[�][�] -> [�] 279
+[d][ ] -> [d ] 280
+[o][ ] -> [o ] 281
+[s][ ] -> [s ] 282
+[y][ ] -> [y ] 283
+[a][n] -> [an] 284
+[t][e] -> [te] 285
+[l][l] -> [ll] 286
+[a][ ] -> [a ] 287
+[r][o] -> [ro] 288
+[I][ ] -> [I ] 289
+[r][ ] -> [r ] 290
+[i][t] -> [it] 291
+[o][n] -> [on] 292
+[e][n] -> [en] 293
+[o][m] -> [om] 294
+[in][g] -> [ing] 295
+[h][a] -> [ha] 296
+[ll][ ] -> [ll ] 297
+[�][�] -> [�] 298
+[d][i] -> [di] 299
+[u][ ] -> [u ] 300
+[e][r] -> [er] 301
+[ing][ ] -> [ing ] 302
+[t][o ] -> [to ] 303
+[r][e] -> [re] 304
+[w][i] -> [wi] 305
+[\u000a\u000aFasi*: ][B] -> [\u000a\u000aFasi*: B] 306
+[i][s ] -> [is ] 307
+[\u000a\u000aAB_naughty: ][B] -> [\u000a\u000aAB_naughty: B] 308
+[�][�] -> [�] 309
+[a][r] -> [ar] 310
+[M][e] -> [Me] 311
+[te][d] -> [ted] 312
+[.][.] -> [..] 313
+[\u000a\u000aFasi*: ][O] -> [\u000a\u000aFasi*: O] 314
+[o][w] -> [ow] 315
+[e][e] -> [ee] 316
+[di][a ] -> [dia ] 317
+[it][ted] -> [itted] 318
+[om][itted] -> [omitted] 319
+[omitted][>] -> [omitted>] 320
+[Me][dia ] -> [Media ] 321
+[<][Media ] -> [<Media ] 322
+[<Media ][omitted>] -> [<Media omitted>] 323
+[f][ ] -> [f ] 324
+[r][o ] -> [ro ] 325
+[m][ ] -> [m ] 326
+[b][ro] -> [bro] 327
+[v][e ] -> [ve ] 328
+[t][i] -> [ti] 329
+[th][e ] -> [the ] 330
+[o][o] -> [oo] 331
+[�][�] -> [�] 332
+[o][u] -> [ou] 333
+[c][h] -> [ch] 334
+[k][ ] -> [k ] 335
+[\u000a\u000aFasi*: ][W] -> [\u000a\u000aFasi*: W] 336
+[\u000a\u000aAB_naughty: ][O] -> [\u000a\u000aAB_naughty: O] 337
+[wi][ll ] -> [will ] 338
+[\u000a\u000aAB_naughty: ][W] -> [\u000a\u000aAB_naughty: W] 339
+[�][�] -> [😂] 340
+[p][p] -> [pp] 341
+[in][ ] -> [in ] 342
+[en][ ] -> [en ] 343
+[s][h] -> [sh] 344
+[e][s] -> [es] 345
+[\u000a\u000aAB_naughty: ][I ] -> [\u000a\u000aAB_naughty: I ] 346
+[s][a] -> [sa] 347
+[s][t] -> [st] 348
+[o][r] -> [or] 349
+[i][t ] -> [it ] 350
+[e][d ] -> [ed ] 351
+[\u000a\u000aAB_naughty: ][Y] -> [\u000a\u000aAB_naughty: Y] 352
+[a][l] -> [al] 353
+['][t ] -> ['t ] 354
+[\u000a\u000aFasi*: ][<Media omitted>] -> [\u000a\u000aFasi*: <Media omitted>] 355
+[an][d ] -> [and ] 356
+[ha][ve ] -> [have ] 357
+[\u000a\u000aFasi*: ][Y] -> [\u000a\u000aFasi*: Y] 358
+[m][e ] -> [me ] 359
+[o][r ] -> [or ] 360
+[r][u] -> [ru] 361
+[\u000a\u000aFasi*: ][I ] -> [\u000a\u000aFasi*: I ] 362
+[l][e] -> [le] 363
+[�][�] -> [��] 364
+[as][ ] -> [as ] 365
+[��][��] -> [�\u200b�] 366
+[m][e] -> [me] 367
+[w][h] -> [wh] 368
+[a][t ] -> [at ] 369
+[e][r ] -> [er ] 370
+[\u000a\u000aFasi*: ][T] -> [\u000a\u000aFasi*: T] 371
+[a][t] -> [at] 372
+[ow][ ] -> [ow ] 373
+[\u000a\u000aAB_naughty: ][T] -> [\u000a\u000aAB_naughty: T] 374
+[�][�] -> [🤣] 375
+[o][t ] -> [ot ] 376
+[u][s] -> [us] 377
+['][s ] -> ['s ] 378
+[\u000a\u000aAB_naughty: ][N] -> [\u000a\u000aAB_naughty: N] 379
+[\u000a\u000aAB_naughty: ][C] -> [\u000a\u000aAB_naughty: C] 380
+[an][ ] -> [an ] 381
+[l][i] -> [li] 382
+[h][h] -> [hh] 383
+[ ][ ] -> [  ] 384
+[\u000a\u000aAB_naughty: ][S] -> [\u000a\u000aAB_naughty: S] 385
+[o][f ] -> [of ] 386
+[u][t ] -> [ut ] 387
+[m][y ] -> [my ] 388
+[d][a] -> [da] 389
+[p][ ] -> [p ] 390
+[\u000a\u000aAB_naughty: ][A] -> [\u000a\u000aAB_naughty: A] 391
+[s][e] -> [se] 392
+[h][e ] -> [he ] 393
+[\u000a\u000aFasi*: ][A] -> [\u000a\u000aFasi*: A] 394
+[c][om] -> [com] 395
+[on][ ] -> [on ] 396
+[b][e ] -> [be ] 397
+[\u000a\u000aAB_naughty: ][I] -> [\u000a\u000aAB_naughty: I] 398
+[�][�] -> [�] 399
+[a][m ] -> [am ] 400
+[k][e ] -> [ke ] 401
+[\u000a\u000aFasi*: ][S] -> [\u000a\u000aFasi*: S] 402
+[i][s] -> [is] 403
+[y][a] -> [ya] 404
+[\u000a\u000aFasi*: ][N] -> [\u000a\u000aFasi*: N] 405
+[ch][ ] -> [ch ] 406
+[U][ ] -> [U ] 407
+[�][�] -> [�] 408
+[�][�] -> [️] 409
+[\u000a\u000aAB_naughty: B][ro] -> [\u000a\u000aAB_naughty: Bro] 410
+[i][ ] -> [i ] 411
+[c][a] -> [ca] 412
+[\u000a\u000aFasi*: ][C] -> [\u000a\u000aFasi*: C] 413
+[a][b] -> [ab] 414
+[\u000a\u000aFasi*: B][ro] -> [\u000a\u000aFasi*: Bro] 415
+[th][ ] -> [th ] 416
+[n][ ] -> [n ] 417
+[m][a] -> [ma] 418
+[n][d ] -> [nd ] 419
+[f][or ] -> [for ] 420
+[i][d ] -> [id ] 421
+[i][c] -> [ic] 422
+[b][ro ] -> [bro ] 423
+[a][c] -> [ac] 424
+[g][e] -> [ge] 425
+[th][at ] -> [that ] 426
+[.][ ] -> [. ] 427
+[\u000a\u000aAB_naughty: ][H] -> [\u000a\u000aAB_naughty: H] 428
+[\u000a\u000aAB_naughty: ][<Media omitted>] -> [\u000a\u000aAB_naughty: <Media omitted>] 429
+[\u000a\u000aFasi*: Y][a] -> [\u000a\u000aFasi*: Ya] 430
+[y][e] -> [ye] 431
+[\u000a\u000aFasi*: ][I] -> [\u000a\u000aFasi*: I] 432
+[�][�] -> [��] 433
+[�][�] -> [\u200d] 434
+[\u200d][�] -> [\u200d�] 435
+[d][e] -> [de] 436
+[\u200d�][��] -> [\u200d♂] 437
+[\u200d♂][️] -> [\u200d♂️] 438
+[\u000a\u000aFasi*: B][ro ] -> [\u000a\u000aFasi*: Bro ] 439
+[..][..] -> [....] 440
+[�][�] -> [🤦] 441
+[🤦][\u200d♂️] -> [🤦\u200d♂️] 442
+[�][�] -> [�] 443
+[�][�] -> [🔥] 444
+[h][e] -> [he] 445
+[t][t] -> [tt] 446
+[w][as ] -> [was ] 447
+[\u000a\u000aAB_naughty: Y][a] -> [\u000a\u000aAB_naughty: Ya] 448
+[�][�] -> [�] 449
+[,][ ] -> [, ] 450
+[l][y ] -> [ly ] 451
+[🤣][🤣] -> [🤣🤣] 452
+[t][s ] -> [ts ] 453
+[re][a] -> [rea] 454
+[o][p] -> [op] 455
+[l][d ] -> [ld ] 456
+[er][e ] -> [ere ] 457
+[r][a] -> [ra] 458
+[on]['t ] -> [on't ] 459
+[r][i] -> [ri] 460
+[\u000a\u000aAB_naughty: ][😂] -> [\u000a\u000aAB_naughty: 😂] 461
+[b][e] -> [be] 462
+[�\u200b�][�\u200b�] -> [�\u200b\u200b\u200b�] 463
+[g][o] -> [go] 464
+[us][t ] -> [ust ] 465
+[th][e] -> [the] 466
+[l][a] -> [la] 467
+[l][e ] -> [le ] 468
+[\u000a\u000aFasi*: W][h] -> [\u000a\u000aFasi*: Wh] 469
+[h][ ] -> [h ] 470
+[t]['s ] -> [t's ] 471
+[e][v] -> [ev] 472
+[\u000a\u000aFasi*: ][H] -> [\u000a\u000aFasi*: H] 473
+[\u000a\u000aAB_naughty: B][ro ] -> [\u000a\u000aAB_naughty: Bro ] 474
+[s][u] -> [su] 475
+[�][�] -> [�] 476
+[t][a] -> [ta] 477
+[c][l] -> [cl] 478
+[i][r] -> [ir] 479
+[i][d] -> [id] 480
+[ar][e ] -> [are ] 481
+[\u000a\u000aFasi*: O][p] -> [\u000a\u000aFasi*: Op] 482
+[t][o] -> [to] 483
+[sa][id ] -> [said ] 484
+[n][ow] -> [now] 485
+[te][r] -> [ter] 486
+[e][x] -> [ex] 487
+[th][is ] -> [this ] 488
+[h][i] -> [hi] 489
+[w][ ] -> [w ] 490
+[l][ ] -> [l ] 491
+[n][ot ] -> [not ] 492
+[\u000a\u000aFasi*: <Media omitted>][\u000a\u000aFasi*: <Media omitted>] -> [\u000a\u000aFasi*: <Media omitted>\u000a\u000aFasi*: <Media omitted>] 493
+[d][o ] -> [do ] 494
+[g][ ] -> [g ] 495
+[on][e ] -> [one ] 496
+[ ][ya] -> [ ya] 497
+[u][r ] -> [ur ] 498
+[\u000a\u000aAB_naughty: O][p] -> [\u000a\u000aAB_naughty: Op] 499
+[o][th] -> [oth] 500
+[\u000a\u000aAB_naughty: ][M] -> [\u000a\u000aAB_naughty: M] 501
+[te][r ] -> [ter ] 502
+[f][f] -> [ff] 503
+[ou][ld ] -> [ould ] 504
+[z][ ] -> [z ] 505
+[w][e ] -> [we ] 506
+[s][en] -> [sen] 507
+[w][a] -> [wa] 508
+[K][ ] -> [K ] 509
+[e][a] -> [ea] 510
+[\u000a\u000aAB_naughty: ][L] -> [\u000a\u000aAB_naughty: L] 511
+[o][s] -> [os] 512
+[k][ing ] -> [king ] 513
+[om][e] -> [ome] 514
+[wi][th ] -> [with ] 515
+[ha][t ] -> [hat ] 516
+[e][d] -> [ed] 517
+[ou][r ] -> [our ] 518
+[e][s ] -> [es ] 519
+[�][�] -> [🥲] 520
+[u][n] -> [un] 521
+[d][o] -> [do] 522
+[w][or] -> [wor] 523
+[u][r] -> [ur] 524
+[n]['t ] -> [n't ] 525
+[te][d ] -> [ted ] 526
+[a][g] -> [ag] 527
+[!][!] -> [!!] 528
+[s][o ] -> [so ] 529
+[ab][t ] -> [abt ] 530
+[\u000a\u000aAB_naughty: ][U ] -> [\u000a\u000aAB_naughty: U ] 531
+[n][o] -> [no] 532
+[\u000a\u000aFasi*: O][k] -> [\u000a\u000aFasi*: Ok] 533
+[\u000a\u000aAB_naughty: ][F] -> [\u000a\u000aAB_naughty: F] 534
+[\u000a\u000aAB_naughty: ][D] -> [\u000a\u000aAB_naughty: D] 535
+[?][?] -> [??] 536
+[n][ow ] -> [now ] 537
+[da][y] -> [day] 538
+[u][c] -> [uc] 539
+[�][�] -> [😁] 540
+[l][y] -> [ly] 541
+[😂][😂] -> [😂😂] 542
+[�][�] -> [💦] 543
+[a][m] -> [am] 544
+[st][u] -> [stu] 545
+[ru][d] -> [rud] 546
+[  ][  ] -> [    ] 547
+[\u000a\u000aFasi*: ][D] -> [\u000a\u000aFasi*: D] 548
+[ru][h] -> [ruh] 549
+[on][e] -> [one] 550
+[\u000a\u000aFasi*: ][U ] -> [\u000a\u000aFasi*: U ] 551
+[c][an ] -> [can ] 552
+[\u000a\u000aFasi*: O][pp] -> [\u000a\u000aFasi*: Opp] 553
+[i][f ] -> [if ] 554
+[j][ust ] -> [just ] 555
+[w][an] -> [wan] 556
+[s][i] -> [si] 557
+[di][d ] -> [did ] 558
+[h][en ] -> [hen ] 559
+[te][ll ] -> [tell ] 560
+[f][ro] -> [fro] 561
+[g][i] -> [gi] 562
+[�][�] -> [😭] 563
+[om][e ] -> [ome ] 564
+[li][ke ] -> [like ] 565
+[\u000a\u000aFasi*: ][F] -> [\u000a\u000aFasi*: F] 566
+[r][y ] -> [ry ] 567
+[d][on't ] -> [don't ] 568
+[\u000a\u000aFasi*: ][G] -> [\u000a\u000aFasi*: G] 569
+[sh][e ] -> [she ] 570
+[\u000a\u000aFasi*: ][L] -> [\u000a\u000aFasi*: L] 571
+[m][r] -> [mr] 572
+[p][a] -> [pa] 573
+[u][p] -> [up] 574
+[na][ ] -> [na ] 575
+[🔥][🔥] -> [🔥🔥] 576
+[\u000a\u000aAB_naughty: O][k] -> [\u000a\u000aAB_naughty: Ok] 577
+[\u000a\u000aAB_naughty: I ][will ] -> [\u000a\u000aAB_naughty: I will ] 578
+[e][c] -> [ec] 579
+[u][ti] -> [uti] 580
+[m][in] -> [min] 581
+[r][it] -> [rit] 582
+[h][er] -> [her] 583
+[s][d] -> [sd] 584
+[ge][t ] -> [get ] 585
+[p][er] -> [per] 586
+[th][ing] -> [thing] 587
+[\u000a\u000aAB_naughty: ][G] -> [\u000a\u000aAB_naughty: G] 588
+[l][o] -> [lo] 589
+[v][e] -> [ve] 590
+[\u000a\u000aFasi*: ][M] -> [\u000a\u000aFasi*: M] 591
+[s][o] -> [so] 592
+[m][o] -> [mo] 593
+[I ][will ] -> [I will ] 594
+[�\u200b\u200b\u200b�][�\u200b\u200b\u200b�] -> [�\u200b\u200b\u200b\u200b\u200b\u200b\u200b�] 595
+[g][ot ] -> [got ] 596
+[wh][i] -> [whi] 597
+[f][in] -> [fin] 598
+[the][y ] -> [they ] 599
+[fro][m ] -> [from ] 600
+[\u000a\u000aAB_naughty: C][h] -> [\u000a\u000aAB_naughty: Ch] 601
+[b][ut ] -> [but ] 602
+[com][e ] -> [come ] 603
+[an][y ] -> [any ] 604
+[ti][on] -> [tion] 605
+[w][w] -> [ww] 606
+[a][f] -> [af] 607
+[a][ll ] -> [all ] 608
+[da][y ] -> [day ] 609
+[th][in] -> [thin] 610
+[a][d] -> [ad] 611
+[c][an] -> [can] 612
+[h][er ] -> [her ] 613
+[m][m] -> [mm] 614
+[h][as ] -> [has ] 615
+[th][en ] -> [then ] 616
+[\u000a\u000aAB_naughty: Y][a ] -> [\u000a\u000aAB_naughty: Ya ] 617
+[\u000a\u000aFasi*: A][nd ] -> [\u000a\u000aFasi*: And ] 618
+[1][0] -> [10] 619
+[have ][to ] -> [have to ] 620
+[g][o ] -> [go ] 621
+[s][t ] -> [st ] 622
+[en][t ] -> [ent ] 623
+[\u000a\u000aAB_naughty: W][h] -> [\u000a\u000aAB_naughty: Wh] 624
+[ll][y ] -> [lly ] 625
+[p][ro] -> [pro] 626
+[c][ ] -> [c ] 627
+[v][i] -> [vi] 628
+[th][ing ] -> [thing ] 629
+[K ][bro ] -> [K bro ] 630
+[\u000a\u000aAB_naughty: <Media omitted>][\u000a\u000aAB_naughty: <Media omitted>] -> [\u000a\u000aAB_naughty: <Media omitted>\u000a\u000aAB_naughty: <Media omitted>] 631
+[th][at] -> [that] 632
+[c][on] -> [con] 633
+[rea][d] -> [read] 634
+[w][rit] -> [writ] 635
+[c][e ] -> [ce ] 636
+[g][oo] -> [goo] 637
+[h][is ] -> [his ] 638
+[c][e] -> [ce] 639
+[ha][pp] -> [happ] 640
+[v][er] -> [ver] 641
+[di][d] -> [did] 642
+[k][e] -> [ke] 643
+[k][ed ] -> [ked ] 644
+[\u000a\u000aFasi*: B][ut ] -> [\u000a\u000aFasi*: But ] 645
+[t][al] -> [tal] 646
+[ha][v] -> [hav] 647
+[b][o] -> [bo] 648
+[g][e ] -> [ge ] 649
+[c][o] -> [co] 650
+[f][or] -> [for] 651
+[th][is] -> [this] 652
+[ha][t's ] -> [hat's ] 653
+[p][s] -> [ps] 654
+[o][k] -> [ok] 655
+[t][u] -> [tu] 656
+[\u000a\u000aAB_naughty: B][ut ] -> [\u000a\u000aAB_naughty: But ] 657
+[p][h] -> [ph] 658
+[�][�] -> [😈] 659
+[p][l] -> [pl] 660
+[a][a] -> [aa] 661
+[ev][en ] -> [even ] 662
+[I ][am ] -> [I am ] 663
+[\u000a\u000aFasi*: Y][a ] -> [\u000a\u000aFasi*: Ya ] 664
+[l][ee] -> [lee] 665
+[k][now ] -> [know ] 666
+[ca][ll] -> [call] 667
+[y][our ] -> [your ] 668
+[t][mr] -> [tmr] 669
+[ti][ll ] -> [till ] 670
+[i][ght] -> [ight] 671
+[n][e] -> [ne] 672
+[ti][on ] -> [tion ] 673
+[a][it] -> [ait] 674
+[en][d ] -> [end ] 675
+[p][ar] -> [par] 676
+[y][e ] -> [ye ] 677
+[m][u] -> [mu] 678
+[al][ ] -> [al ] 679
+[ha][t] -> [hat] 680
+[a][ve ] -> [ave ] 681
+[on][t ] -> [ont ] 682
+[ee][ee] -> [eeee] 683
+[🤦\u200d♂️][🤦\u200d♂️] -> [🤦\u200d♂️🤦\u200d♂️] 684
+[f][uc] -> [fuc] 685
+[sh][ould ] -> [should ] 686
+[t ][to ] -> [t to ] 687
+[s][p] -> [sp] 688
+[s][ome] -> [some] 689
+[J][ust ] -> [Just ] 690
+[�][�] -> [🥳] 691
+[h][ow ] -> [how ] 692
+[on][ly ] -> [only ] 693
+[\u000a\u000aAB_naughty: A][nd ] -> [\u000a\u000aAB_naughty: And ] 694
+[a][y] -> [ay] 695
+[an][d] -> [and] 696
+[se][e ] -> [see ] 697
+[q][u] -> [qu] 698
+[\u000a\u000aFasi*: C][h] -> [\u000a\u000aFasi*: Ch] 699
+[?][\u000a\u000aAB_naughty: ] -> [?\u000a\u000aAB_naughty: ] 700
+[e][l] -> [el] 701
+[es][s] -> [ess] 702
+[c][z ] -> [cz ] 703
+[/][/] -> [//] 704
+[c][u] -> [cu] 705
+[e][ll ] -> [ell ] 706
+[�][�] -> [💋] 707
+[wh][en ] -> [when ] 708
+[*][*] -> [**] 709
+[an][y] -> [any] 710
+[h][tt] -> [htt] 711
+[cl][as] -> [clas] 712
+[b][ruh] -> [bruh] 713
+[ha][r] -> [har] 714
+[2][ ] -> [2 ] 715
+[a][d ] -> [ad ] 716
+[sen][d ] -> [send ] 717
+[:][//] -> [://] 718
+[\u000a\u000aFasi*: W][t ] -> [\u000a\u000aFasi*: Wt ] 719
+[💋][💋] -> [💋💋] 720
+[htt][ps] -> [https] 721
+[https][://] -> [https://] 722
+[m][es] -> [mes] 723
+[stu][d] -> [stud] 724
+[i][ll ] -> [ill ] 725
+[ha][d ] -> [had ] 726
+[whi][ch ] -> [which ] 727
+[ing ][to ] -> [ing to ] 728
+[\u000a\u000aAB_naughty: ][U] -> [\u000a\u000aAB_naughty: U] 729
+[i][g] -> [ig] 730
+[\u000a\u000aFasi*: C][ ya] -> [\u000a\u000aFasi*: C ya] 731
+[p][ic] -> [pic] 732
+[i][l] -> [il] 733
+[p ][bro] -> [p bro] 734
+[ou][t ] -> [out ] 735
+[o][u ] -> [ou ] 736
+[\u000a\u000aAB_naughty: N][o ] -> [\u000a\u000aAB_naughty: No ] 737
+[l][in] -> [lin] 738
+[rea][d ] -> [read ] 739
+[te][ll] -> [tell] 740
+[\u000a\u000aFasi*: I ][am ] -> [\u000a\u000aFasi*: I am ] 741
+[it][s ] -> [its ] 742
+[happ][en] -> [happen] 743
+[\u000a\u000aAB_naughty: N][o] -> [\u000a\u000aAB_naughty: No] 744
+[e][ll] -> [ell] 745
+[y][a ] -> [ya ] 746
+[ca][ll ] -> [call ] 747
+[en][t] -> [ent] 748
+[\u000a\u000aFasi*: W][rud] -> [\u000a\u000aFasi*: Wrud] 749
+[ev][er] -> [ever] 750
+[m][p] -> [mp] 751
+[s][lee] -> [slee] 752
+[�][�] -> [🥺] 753
+[m][b] -> [mb] 754
+[b][y ] -> [by ] 755
+[i][sh] -> [ish] 756
+[�][�] -> [�] 757
+[\u000a\u000aAB_naughty: O][h ] -> [\u000a\u000aAB_naughty: Oh ] 758
+[ti][me ] -> [time ] 759
+[\u000a\u000aAB_naughty: H][e ] -> [\u000a\u000aAB_naughty: He ] 760
+[st][ar] -> [star] 761
+[😭][😭] -> [😭😭] 762
+[\u000a\u000aFasi*: I ][will ] -> [\u000a\u000aFasi*: I will ] 763
+[\u000a\u000aAB_naughty: I][t's ] -> [\u000a\u000aAB_naughty: It's ] 764
+[en][d] -> [end] 765
+[w][at] -> [wat] 766
+[\u000a\u000aFasi*: O][h ] -> [\u000a\u000aFasi*: Oh ] 767
+[\u000a\u000aAB_naughty: I ][am ] -> [\u000a\u000aAB_naughty: I am ] 768
+[s][ome ] -> [some ] 769
+[oth][er ] -> [other ] 770
+[\u000a\u000aAB_naughty: ][🤦\u200d♂️] -> [\u000a\u000aAB_naughty: 🤦\u200d♂️] 771
+[💦][💦] -> [💦💦] 772
+[m][ar] -> [mar] 773
+[af][ter ] -> [after ] 774
+[or][e ] -> [ore ] 775
+[he][y ] -> [hey ] 776
+[r][y] -> [ry] 777
+[2][0] -> [20] 778
+[b][ac] -> [bac] 779
+[\u000a\u000aFasi*: Ok][k] -> [\u000a\u000aFasi*: Okk] 780
+[thin][k ] -> [think ] 781
+[\u000a\u000aAB_naughty: M][y ] -> [\u000a\u000aAB_naughty: My ] 782
+[\u000a\u000aAB_naughty: ][R] -> [\u000a\u000aAB_naughty: R] 783
+[s][c] -> [sc] 784
+[ta][ke ] -> [take ] 785
+[\u000a\u000aAB_naughty: ][E] -> [\u000a\u000aAB_naughty: E] 786
+[n][o ] -> [no ] 787
+[g][u] -> [gu] 788
+[\u000a\u000aFasi*: ][R] -> [\u000a\u000aFasi*: R] 789
+[om][ ] -> [om ] 790
+[en]['t ] -> [en't ] 791
+[will ][u ] -> [will u ] 792
+[a][ll] -> [all] 793
+[her][e] -> [here] 794
+[ti][me] -> [time] 795
+[gi][ve ] -> [give ] 796
+[tmr][w] -> [tmrw] 797
+[did ][u ] -> [did u ] 798
+[mes][sa] -> [messa] 799
+[\u000a\u000aFasi*: ][K bro ] -> [\u000a\u000aFasi*: K bro ] 800
+[\u000a\u000a][\u000a\u000a] -> [\u000a\u000a\u000a\u000a] 801
+[t][oo] -> [too] 802
+[\u000a\u000aAB_naughty: O][hh] -> [\u000a\u000aAB_naughty: Ohh] 803
+[in ][the ] -> [in the ] 804
+[\u000a\u000aAB_naughty: W][rud] -> [\u000a\u000aAB_naughty: Wrud] 805
+[w][t ] -> [wt ] 806
+[al][so ] -> [also ] 807
+[n][d] -> [nd] 808
+[🤣🤣][🤣🤣] -> [🤣🤣🤣🤣] 809
+[\u000a\u000aFasi*: T][hen ] -> [\u000a\u000aFasi*: Then ] 810
+[b][u] -> [bu] 811
+[?][ ] -> [? ] 812
+[t][e ] -> [te ] 813
+[b][ye] -> [bye] 814
+[\u000a\u000aAB_naughty: O][h] -> [\u000a\u000aAB_naughty: Oh] 815
+[s][ee] -> [see] 816
+[m][an] -> [man] 817
+[f][e] -> [fe] 818
+[y][y] -> [yy] 819
+[\u000a\u000aAB_naughty: W][hat ] -> [\u000a\u000aAB_naughty: What ] 820
+[did][n't ] -> [didn't ] 821
+[th][ere ] -> [there ] 822
+[w][ould ] -> [would ] 823
+[\u000a\u000aAB_naughty: ][K] -> [\u000a\u000aAB_naughty: K] 824
+[writ][e ] -> [write ] 825
+[o][l] -> [ol] 826
+[th][er] -> [ther] 827
+[\u000a\u000aFasi*: H][e ] -> [\u000a\u000aFasi*: He ] 828
+[�\u200b\u200b\u200b\u200b\u200b\u200b\u200b�][�\u200b\u200b\u200b\u200b\u200b\u200b\u200b�] -> [�\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b�] 829
+[j][o] -> [jo] 830
+[will ][be ] -> [will be ] 831
+[sa][y ] -> [say ] 832
+[\u000a\u000aFasi*: W][t] -> [\u000a\u000aFasi*: Wt] 833
+[w][ere ] -> [were ] 834
+[f][ee] -> [fee] 835
+[n][ee] -> [nee] 836
+[oo][oo] -> [oooo] 837
+[\u000a\u000aAB_naughty: S][he ] -> [\u000a\u000aAB_naughty: She ] 838
+[�][�] -> [�] 839
+[n][t ] -> [nt ] 840
+[\u000a\u000aFasi*: ][P] -> [\u000a\u000aFasi*: P] 841
+[\u000a\u000aAB_naughty: S][o ] -> [\u000a\u000aAB_naughty: So ] 842
+[\u000a\u000aAB_naughty: ][�] -> [\u000a\u000aAB_naughty: �] 843
+[\u000a\u000aFasi*: ][😂😂] -> [\u000a\u000aFasi*: 😂😂] 844
+[�][�] -> [🤔] 845
+[h][an] -> [han] 846
+[v][en ] -> [ven ] 847
+[\u000a\u000aFasi*: O][hh] -> [\u000a\u000aFasi*: Ohh] 848
+[b][r] -> [br] 849
+[\u000a\u000aFasi*: ][E] -> [\u000a\u000aFasi*: E] 850
+[3][0] -> [30] 851
+[\u000a\u000aFasi*: ][😂] -> [\u000a\u000aFasi*: 😂] 852
+[d][e ] -> [de ] 853
+[os][e ] -> [ose ] 854
+[f][ir] -> [fir] 855
+[oo][b] -> [oob] 856
+[en][ts ] -> [ents ] 857
+[a ][b] -> [a b] 858
+[a][v] -> [av] 859
+[....][..] -> [......] 860
+[s][?] -> [s?] 861
+[\u000a\u000aFasi*: S][o ] -> [\u000a\u000aFasi*: So ] 862
+[\u000a\u000aFasi*: ][U] -> [\u000a\u000aFasi*: U] 863
+[w][on't ] -> [won't ] 864
+[t][w] -> [tw] 865
+[f][u] -> [fu] 866
+[se][l] -> [sel] 867
+[p][re] -> [pre] 868
+[.][com] -> [.com] 869
+[wh][y ] -> [why ] 870
+[\u000a\u000aAB_naughty: A][m ] -> [\u000a\u000aAB_naughty: Am ] 871
+[ ][u ] -> [ u ] 872
+[\u000a\u000aAB_naughty: W][t] -> [\u000a\u000aAB_naughty: Wt] 873
+[🥳][🥳] -> [🥳🥳] 874
+[e][e ] -> [ee ] 875
+[5][ ] -> [5 ] 876
+[as][t ] -> [ast ] 877
+[a][pp] -> [app] 878
+[b][cz ] -> [bcz ] 879
+[u][p ] -> [up ] 880
+[\u000a\u000aAB_naughty: C][ ya] -> [\u000a\u000aAB_naughty: C ya] 881
+[com][p] -> [comp] 882
+[\u000a\u000aFasi*: H][ow ] -> [\u000a\u000aFasi*: How ] 883
+[ca][me ] -> [came ] 884
+[\u000a\u000aFasi*: N][oth] -> [\u000a\u000aFasi*: Noth] 885
+[th][er ] -> [ther ] 886
+[d][er] -> [der] 887
+[\u000a\u000aFasi*: <Media omitted>\u000a\u000aFasi*: <Media omitted>][\u000a\u000aFasi*: <Media omitted>\u000a\u000aFasi*: <Media omitted>] -> [\u000a\u000aFasi*: <Media omitted>\u000a\u000aFasi*: <Media omitted>\u000a\u000aFasi*: <Media omitted>\u000a\u000aFasi*: <Media omitted>] 888
+[me][an ] -> [mean ] 889
+[\u000a\u000aFasi*: ][https://] -> [\u000a\u000aFasi*: https://] 890
+[u][z ] -> [uz ] 891
+[d][u] -> [du] 892
+[y][s ] -> [ys ] 893
+[u ][have ] -> [u have ] 894
+[at][e ] -> [ate ] 895
+[p][o] -> [po] 896
+[as][k ] -> [ask ] 897
+[f][i] -> [fi] 898
+[a][it ] -> [ait ] 899
+[\u000a\u000aAB_naughty: N][ot ] -> [\u000a\u000aAB_naughty: Not ] 900
+[.com][/] -> [.com/] 901
+[\u000a\u000aAB_naughty: 😂][ ] -> [\u000a\u000aAB_naughty: 😂 ] 902
+[hi][m ] -> [him ] 903
+[\u000a\u000aFasi*: I][t ] -> [\u000a\u000aFasi*: It ] 904
+[h][ere ] -> [here ] 905
+[ever][y] -> [every] 906
+[1][ ] -> [1 ] 907
+[sen][t ] -> [sent ] 908
+[t][s] -> [ts] 909
+[gh][ ] -> [gh ] 910
+[sd][k] -> [sdk] 911
+[\u000a\u000aFasi*: Wh][en ] -> [\u000a\u000aFasi*: When ] 912
+[�][�] -> [🤭] 913
+[wh][o ] -> [who ] 914
+[\u000a\u000aAB_naughty: ][P] -> [\u000a\u000aAB_naughty: P] 915
+[k][s ] -> [ks ] 916
+[th][o] -> [tho] 917
+[u ][r ] -> [u r ] 918
+[f][a] -> [fa] 919
+[ed ][to ] -> [ed to ] 920
+[th][es] -> [thes] 921
+[ra][m] -> [ram] 922
+[tt][a ] -> [tta ] 923
+[\u000a\u000aFasi*: W][ait] -> [\u000a\u000aFasi*: Wait] 924
+[fin][ish] -> [finish] 925
+[c][i] -> [ci] 926
+[com][e] -> [come] 927
+[\u000a\u000aAB_naughty: L][e] -> [\u000a\u000aAB_naughty: Le] 928
+[w][hat ] -> [what ] 929
+[to][day] -> [today] 930
+[de][le] -> [dele] 931
+[mu][ch ] -> [much ] 932
+[slee][p] -> [sleep] 933
+[\u000a\u000aFasi*: M][y ] -> [\u000a\u000aFasi*: My ] 934
+[d][k ] -> [dk ] 935
+[\u000a\u000aAB_naughty: T][hen ] -> [\u000a\u000aAB_naughty: Then ] 936
+[e][t] -> [et] 937
+[p][r] -> [pr] 938
+[k][now] -> [know] 939
+[me][an] -> [mean] 940
+[l][oo] -> [loo] 941
+[i][ll] -> [ill] 942
+[it]['s ] -> [it's ] 943
+[\u000a\u000aFasi*: ][🤦\u200d♂️] -> [\u000a\u000aFasi*: 🤦\u200d♂️] 944
+[y][ing ] -> [ying ] 945
+[m][any ] -> [many ] 946
+[er][s] -> [ers] 947
+[ch][uti] -> [chuti] 948
+[\u000a\u000aFasi*: Wh][y] -> [\u000a\u000aFasi*: Why] 949
+[s][oo] -> [soo] 950
+[I ][have ] -> [I have ] 951
+[can]['t ] -> [can't ] 952
+[h][o] -> [ho] 953
+[k][k] -> [kk] 954
+[c][ ya] -> [c ya] 955
+[\u000a\u000aFasi*: N][o] -> [\u000a\u000aFasi*: No] 956
+[ight][ ] -> [ight ] 957
+[ee][e] -> [eee] 958
+[m][ee] -> [mee] 959
+[hi][m] -> [him] 960
+[\u000a\u000aAB_naughty: I][t ] -> [\u000a\u000aAB_naughty: It ] 961
+[hav][en't ] -> [haven't ] 962
+[\u000a\u000aFasi*: N][o ] -> [\u000a\u000aFasi*: No ] 963
+[tt][ing ] -> [tting ] 964
+[i][r ] -> [ir ] 965
+[nee][d ] -> [need ] 966
+[\u000a\u000aAB_naughty: H][mm] -> [\u000a\u000aAB_naughty: Hmm] 967
+[ic][e] -> [ice] 968
+[\u000a\u000aFasi*: I][ts ] -> [\u000a\u000aFasi*: Its ] 969
+[\u000a\u000aAB_naughty: N][a] -> [\u000a\u000aAB_naughty: Na] 970
+[ro][u] -> [rou] 971
+[m][ore ] -> [more ] 972
+[s][e ] -> [se ] 973
+[\u000a\u000aFasi*: ][🥲] -> [\u000a\u000aFasi*: 🥲] 974
+[in][st] -> [inst] 975
+[    ][    ] -> [        ] 976
+[l][d] -> [ld] 977
+[er][s ] -> [ers ] 978
+[ught][ ] -> [ught ] 979
+[id ][u ] -> [id u ] 980
+[h][en] -> [hen] 981
+[ ][bro] -> [ bro] 982
+[s][w] -> [sw] 983
+[\u000a\u000aAB_naughty: W][e ] -> [\u000a\u000aAB_naughty: We ] 984
+[ww][w] -> [www] 985
+[\u000a\u000aAB_naughty: I][f ] -> [\u000a\u000aAB_naughty: If ] 986
+[la][ter] -> [later] 987
+[😁][😁] -> [😁😁] 988
+[qu][es] -> [ques] 989
+[u][t] -> [ut] 990
+[ry ][goo] -> [ry goo] 991
+[d][k] -> [dk] 992
+[�][�] -> [😢] 993
+[k ][bro] -> [k bro] 994
+[e][ar] -> [ear] 995
+[E][ ] -> [E ] 996
+[s][till ] -> [still ] 997
+[a][y ] -> [ay ] 998
+[\u000a\u000aFasi*: I][f ] -> [\u000a\u000aFasi*: If ] 999
+[m][one] -> [mone] 1000
+[b][oo] -> [boo] 1001
+[3][ ] -> [3 ] 1002
+[ ][u] -> [ u] 1003
+[\u000a\u000aFasi*: ][🔥] -> [\u000a\u000aFasi*: 🔥] 1004
+[s][s] -> [ss] 1005
+[i][ke ] -> [ike ] 1006
+[r ][u ] -> [r u ] 1007
+[\u000a\u000aAB_naughty: T][hey ] -> [\u000a\u000aAB_naughty: They ] 1008
+[ri][ght] -> [right] 1009
+[wa][it] -> [wait] 1010
+[an][g] -> [ang] 1011
+[I ][was ] -> [I was ] 1012
+[o][ll] -> [oll] 1013
+[ic][e ] -> [ice ] 1014
+[t][ur] -> [tur] 1015
+[\u000a\u000aFasi*: Opp][p] -> [\u000a\u000aFasi*: Oppp] 1016
+[\u000a\u000aAB_naughty: W][hi] -> [\u000a\u000aAB_naughty: Whi] 1017
+[\u000a\u000aAB_naughty: W][ait] -> [\u000a\u000aAB_naughty: Wait] 1018
+[te][x] -> [tex] 1019
+[no][te] -> [note] 1020
+[\u000a\u000aFasi*: ][Just ] -> [\u000a\u000aFasi*: Just ] 1021
+[per][s] -> [pers] 1022
+[ha][ll ] -> [hall ] 1023
