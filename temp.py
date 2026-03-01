@@ -1,57 +1,65 @@
 # =========================================================
-# 1️⃣ Setup
+# Install + Import minbpe
 # =========================================================
 
+!git clone https://github.com/karpathy/minbpe.git
+
+import sys
+sys.path.append("minbpe")
+
+from minbpe.basic import BasicTokenizer
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from torch.utils.data import Dataset, DataLoader
 from safetensors.torch import save_file
-import os
-import glob
-import gc
+import os, gc, json, time
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Device:", device)
 
 # =========================================================
-# 2️⃣ Parameters (balanced for Kaggle GPU)
+# Stage 1 Hyperparameters
 # =========================================================
 
 block_size = 256
-batch_size = 32          # Safe for Kaggle GPUs
-n_embd = 256             # Bigger = smarter model
+batch_size = 32
+n_embd = 256
 n_head = 8
 n_layer = 6
 dropout = 0.2
 learning_rate = 3e-4
-epochs = 5               # You said length doesn't matter 😉
+epochs = 2  # Stage 1 sanity
 
 # =========================================================
-# 3️⃣ Load Dataset Directory
+# Load Dataset (FINAL CORRECT VERSION)
 # =========================================================
 
-DATA_DIR = "/kaggle/input/your-dataset-name/"  # 🔥 CHANGE THIS
+DATA_FILE = "/kaggle/input/datasets/fasiowaizahmed/llm-training-90mb/sample.txt"
 
-files = glob.glob(DATA_DIR + "/*.txt")
-assert len(files) > 0, "No text files found!"
+print("Loading dataset file...")
 
-text = ""
+import os
+assert os.path.exists(DATA_FILE), f"File not found: {DATA_FILE}"
 
-for fp in files:
-    with open(fp, "r", encoding="utf-8") as f:
-        text += f.read()
+with open(DATA_FILE, "r", encoding="utf-8") as f:
+    text = f.read()
 
-print("Corpus length:", len(text))
+print("Corpus length (characters):", len(text))
 
 # =========================================================
-# 4️⃣ Tokenizer (minBPE)
+# Tokenizer
 # =========================================================
 
 from minbpe import BasicTokenizer
 
+print("Training tokenizer...")
+t0 = time.time()
+
 tokenizer = BasicTokenizer()
-tokenizer.train(text, vocab_size=2048)   # Bigger vocab = better language modeling
+tokenizer.train(text, vocab_size=2048)
+
+print("Tokenizer training time:", round(time.time() - t0, 2), "seconds")
 
 token_ids = tokenizer.encode(text)
 vocab_size = len(tokenizer.vocab)
@@ -60,7 +68,7 @@ print("Vocab size:", vocab_size)
 print("Token count:", len(token_ids))
 
 # =========================================================
-# 5️⃣ Dataset
+# Dataset
 # =========================================================
 
 class TokenDataset(Dataset):
@@ -81,7 +89,7 @@ dataset = TokenDataset(token_ids, block_size)
 loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 
 # =========================================================
-# 6️⃣ Model
+# Model Definition
 # =========================================================
 
 class Head(nn.Module):
@@ -98,7 +106,7 @@ class Head(nn.Module):
         k = self.key(x)
         q = self.query(x)
 
-        weights = q @ k.transpose(-2, -1) * C**-0.5
+        weights = q @ k.transpose(-2, -1) * (k.shape[-1] ** -0.5)
         weights = weights.masked_fill(self.tril[:T, :T] == 0, float('-inf'))
         weights = F.softmax(weights, dim=-1)
         weights = self.dropout(weights)
@@ -107,10 +115,11 @@ class Head(nn.Module):
         return weights @ v
 
 class MultiHeadAttention(nn.Module):
-    def __init__(self, num_heads, head_size):
+    def __init__(self):
         super().__init__()
-        self.heads = nn.ModuleList([Head(head_size) for _ in range(num_heads)])
-        self.proj = nn.Linear(head_size * num_heads, n_embd)
+        head_size = n_embd // n_head
+        self.heads = nn.ModuleList([Head(head_size) for _ in range(n_head)])
+        self.proj = nn.Linear(n_embd, n_embd)
         self.dropout = nn.Dropout(dropout)
 
     def forward(self, x):
@@ -133,8 +142,7 @@ class FeedForward(nn.Module):
 class Block(nn.Module):
     def __init__(self):
         super().__init__()
-        head_size = n_embd // n_head
-        self.sa = MultiHeadAttention(n_head, head_size)
+        self.sa = MultiHeadAttention()
         self.ffwd = FeedForward()
         self.ln1 = nn.LayerNorm(n_embd)
         self.ln2 = nn.LayerNorm(n_embd)
@@ -173,10 +181,13 @@ class GPTLanguageModel(nn.Module):
 model = GPTLanguageModel().to(device)
 
 # =========================================================
-# 7️⃣ Training
+# Training
 # =========================================================
 
 optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
+
+print("Starting Stage 1 Training...")
+t0 = time.time()
 
 for epoch in range(epochs):
     model.train()
@@ -200,11 +211,13 @@ for epoch in range(epochs):
     avg_loss = total_loss / len(loader)
     print(f"Epoch {epoch+1} | Loss: {avg_loss:.4f}")
 
+print("Training time:", round(time.time() - t0, 2), "seconds")
+
 # =========================================================
-# 8️⃣ Save Everything (IMPORTANT)
+# Save Outputs
 # =========================================================
 
-save_file(model.state_dict(), "/kaggle/working/model.safetensors")
+save_file(model.state_dict(), "/kaggle/working/model_stage1.safetensors")
 tokenizer.save("/kaggle/working/tokenizer")
 
 config = {
@@ -215,8 +228,7 @@ config = {
     "vocab_size": vocab_size
 }
 
-import json
 with open("/kaggle/working/config.json", "w") as f:
     json.dump(config, f)
 
-print("✅ Training Complete")
+print("✅ Stage 1 Complete")
